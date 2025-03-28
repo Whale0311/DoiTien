@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập số tiền -->
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <!-- Chọn tiền nguồn -->
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Hiển thị kết quả trực tiếp trong EditText -->
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:hint="Kết quả"
+        android:inputType="none"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <!-- Chọn tiền đích -->
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Hiển thị tỉ giá -->
+    <TextView
+        android:id="@+id/tvExchangeRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tỉ giá: --"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingTop="8dp" />
+</LinearLayout>
